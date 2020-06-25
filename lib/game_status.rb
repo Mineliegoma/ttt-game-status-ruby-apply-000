@@ -36,7 +36,7 @@ def won?(board)
     
     
     
-     if position_1 == "X" && position_2 =="X" && position_3 == "X" || posito
+     if position_1 == "X" && position_2 =="X" && position_3 == "X" || position_4 == "X" && position_5 == "X" && position_6 == "X"
       return winning
   
     end
