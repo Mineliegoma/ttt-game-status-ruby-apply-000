@@ -19,20 +19,12 @@ def won?(board)
     win_index_1=winning[0]
     win_index_2 = winning[1]
     win_index_3 = winning[2]
-    win_index_4 = winning[3]
-    win_index_5 = winning[4]
-    win_index_6 = winning[5]
-    win_index_7 = winning[6]
-    win_index_8 = winning[7]
+    
     position_1 = board[win_index_1] #LOAD THE VALUE OF THE BOARD AT INDEX win_index_1
     position_2 = board[win_index_2]
     
     position_3 = board[win_index_3]
-    position_4 = board[win_index_4]
-    position_5 = board[win_index_5]
-    position_6 = board[win_index_6]
-    position_7 = board[win_index_7]
-    position_8 = board[win_index_8]
+    
     
     
     
