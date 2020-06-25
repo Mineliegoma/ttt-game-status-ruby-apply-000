@@ -30,7 +30,7 @@ def won?(board)
     
     
     
-     if position_1 == "X"  && position_2 =="X" && position_3 == "X"  && position_taken?(board,win_index_1)  
+     if position_1 == "X"  && position_2 =="X" && position_3 == "X"  && position_taken?(board,win_index_1)  || position_1 == "O"  && position_2 =="" && position_3 == "X"  && position_taken?(board,win_index_1)
        return winning
   
     end
