@@ -16,28 +16,30 @@ end
 WIN_COMBINATIONS = [[0,1,2],[6,7,8],[3,4,5],[0,3,6],[1,4,7],[2,5,8],[2,4,6],[0,4,8]]
 def won?(board)
   WIN_COMBINATIONS.detect do |winning|
-    @board.cells[winner[0]] == @board.cells[winner[1]] &&  @board.cells[winner[1]] == 
+    @board.cells[winning[0]] == @board.cells[winning[1]] &&  @board.cells[winning[1]] == @board.cells[winning[2]]
+  end
+end
     
-    win_index_1=winning[0]
-    win_index_2 = winning[1]
-    win_index_3 = winning[2]
+    #win_index_1=winning[0]
+   # win_index_2 = winning[1]
+    #win_index_3 = winning[2]
     
-    position_1 = board[win_index_1] #LOAD THE VALUE OF THE BOARD AT INDEX win_index_1
-    position_2 = board[win_index_2]
+    #position_1 = board[win_index_1] #LOAD THE VALUE OF THE BOARD AT INDEX #win_index_1
+    #position_2 = board[win_index_2]
     
-    position_3 = board[win_index_3]
-    
-    
+    #position_3 = board[win_index_3]
     
     
-     if position_1 == "X" && position_2 =="X" && position_3 == "X" 
-       return winning
+    
+    
+     #if position_1 == "X" && position_2 =="X" && position_3 == "X" 
+       #return winning
   
-    end
+    #end
     
-  end
-  false
-  end
+  #end
+  #false
+  #end
   
   def full?(board)
     if board.any? {|index| index == nil || index == " " || index == ""}
